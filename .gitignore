@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.log
+dryrun_report.txt
+duplicates_report_*.txt
