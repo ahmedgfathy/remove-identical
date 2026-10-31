@@ -1,0 +1,38 @@
+# duplicate report  2026-10-03 22:58:27
+# root=/home/xinreal/remove-identical/tests/fixture
+# dest=/home/xinreal/remove-identical/tests/fixture/duplicates_20261003_225827
+# mode=apply keep=oldest
+# proof: same size + byte-for-byte equal + full MD5 per group
+
+
+GROUP copies=2 size=307200 md5=2e24ad88fe105fced7d38c155625c301
+  KEEP  /home/xinreal/remove-identical/tests/fixture/big/c1.dat
+  MOVE  /home/xinreal/remove-identical/tests/fixture/other/c2.dat
+
+GROUP copies=3 size=10240 md5=c3cd26e07e555c0116db237fbc06d99c
+  KEEP  /home/xinreal/remove-identical/tests/fixture/photos/a.jpg
+  MOVE  /home/xinreal/remove-identical/tests/fixture/photos/sub/b.png
+  MOVE  /home/xinreal/remove-identical/tests/fixture/photos/sub/deep/c.jpeg
+
+GROUP copies=3 size=0 md5=d41d8cd98f00b204e9800998ecf8427e
+  KEEP  /home/xinreal/remove-identical/tests/fixture/e1.txt
+  MOVE  /home/xinreal/remove-identical/tests/fixture/e2.txt
+  MOVE  /home/xinreal/remove-identical/tests/fixture/sub/e3.txt
+
+GROUP copies=2 size=2048 md5=1ae7e597a53ac6f42def752952b83e53
+  KEEP  /home/xinreal/remove-identical/tests/fixture/alpha/f.jpg
+  MOVE  /home/xinreal/remove-identical/tests/fixture/zeta/f.jpg
+
+GROUP copies=2 size=1400 md5=3f6bf8a5ce8d3371d3d0076f9b083191
+  MOVE  /home/xinreal/remove-identical/tests/fixture/other/测试 图.jpg
+  KEEP  /home/xinreal/remove-identical/tests/fixture/photos/测试 图.jpg
+MOVED  /home/xinreal/remove-identical/tests/fixture/other/c2.dat  ->  /home/xinreal/remove-identical/tests/fixture/duplicates_20261003_225827/other/c2.dat
+MOVED  /home/xinreal/remove-identical/tests/fixture/photos/sub/b.png  ->  /home/xinreal/remove-identical/tests/fixture/duplicates_20261003_225827/photos/sub/b.png
+MOVED  /home/xinreal/remove-identical/tests/fixture/photos/sub/deep/c.jpeg  ->  /home/xinreal/remove-identical/tests/fixture/duplicates_20261003_225827/photos/sub/deep/c.jpeg
+MOVED  /home/xinreal/remove-identical/tests/fixture/e2.txt  ->  /home/xinreal/remove-identical/tests/fixture/duplicates_20261003_225827/e2.txt
+MOVED  /home/xinreal/remove-identical/tests/fixture/sub/e3.txt  ->  /home/xinreal/remove-identical/tests/fixture/duplicates_20261003_225827/sub/e3.txt
+MOVED  /home/xinreal/remove-identical/tests/fixture/zeta/f.jpg  ->  /home/xinreal/remove-identical/tests/fixture/duplicates_20261003_225827/zeta/f.jpg
+MOVED  /home/xinreal/remove-identical/tests/fixture/other/测试 图.jpg  ->  /home/xinreal/remove-identical/tests/fixture/duplicates_20261003_225827/other/测试 图.jpg
+
+# finished 2026-10-03 22:58:27
+# groups=5 moved_files=7 moved_bytes=331128

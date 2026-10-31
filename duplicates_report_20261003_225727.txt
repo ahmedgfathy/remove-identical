@@ -1,0 +1,9 @@
+# duplicate report  2026-10-03 22:57:27
+# root=/home/xinreal/remove-identical/tests/fixture
+# dest=/home/xinreal/remove-identical/tests/fixture/duplicates_20261003_225727
+# mode=dry-run keep=oldest
+# proof: same size + byte-for-byte equal + full MD5 per group
+
+
+# finished 2026-10-03 22:57:27
+# groups=0 moved_files=0 moved_bytes=0
